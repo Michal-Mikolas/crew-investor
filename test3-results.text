@@ -1,0 +1,29 @@
+| version | time `import crewai` takes |
+| ------- | -------------------------- |
+| master  | 18.4s                      |
+| v0.63.6 | 16.4s                      |
+| v0.63.0 | 16.3s                      |
+| v0.61.0 | 15.9s                      |
+| v0.60.0 | 15.8s                      |
+| v0.55.2 | 14.3s                      |
+| v0.51.0 | 13.9s                      |
+| v0.41.1 | 13.6s                      |
+| v0.41.0 | 13.8s                      |
+| v0.36.0 | 13.7s                      |
+| v0.35.8 | 12.0s                      |
+| v0.35.0 | 11.8s                      |
+| v0.32.2 | 11.0s                      |
+| v0.32.1 | 11.7s                      |
+| v0.32.0 | 11.6s                      |
+| v0.30.8 | 6.7s                       |
+| v0.28.5 | 6.2s                       |
+| v0.27.0 | 6.2s                       |
+| v0.22.0 | No module named 'pkg_resources' |
+| v0.19.0 | No module named 'pkg_resources' |
+
+
+| library    | time `import` takes |
+| ---------- | ------------------- |
+| crewai     | 18.4s               |
+| autogen    |  2.2s               |
+| langggraph |  2.3s               |
