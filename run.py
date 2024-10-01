@@ -1,13 +1,13 @@
 import os
 from dotenv import load_dotenv
-from crewai import Agent, Task, Crew
-from langchain_groq import ChatGroq
+from crewai import LLM, Agent, Task, Crew
 
 load_dotenv()  # take environment variables from .env
 
-llm=ChatGroq(temperature=0,
-	model_name="llama-3.2-3b-preview",
-	api_key=os.getenv("GROQ_API_KEY"),
+llm = LLM(
+    model="groq/llama-3.2-3b-preview",
+    temperature=0.0,
+    api_key=os.getenv("GROQ_API_KEY"),
 )
 
 adviser = Agent(
