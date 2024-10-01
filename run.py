@@ -4,11 +4,7 @@ from crewai import LLM, Agent, Task, Crew
 
 load_dotenv()  # take environment variables from .env
 
-llm = LLM(
-    model="groq/llama-3.2-3b-preview",
-    temperature=0.0,
-    api_key=os.getenv("GROQ_API_KEY"),
-)
+llm = LLM(model="groq/llama-3.2-3b-preview", temperature=0.0)
 
 adviser = Agent(
 	role='Stocks Adviser',
